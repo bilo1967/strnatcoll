@@ -4,12 +4,14 @@ include_once 'strnatcoll.php';
 
 $locale = "it_IT.utf8";
 
+// An array of strings with accents and numbers
 $array = array(
-  "prova 4", "blood", "ético", "bacíle", "straziato", "calo", "Camera",
-  "Canal", "Concatenacion", "bacillo", "Cliente", "prova 211", "Calò",
-  "etico", "Strain", "strasse", "Concatenación", "Prova 31", "Cámara",
-  "Calidad", "1", "913", "313", "", " ", "Straße", "pesca", "pésca",
-  "pescare", "canál", "bacile", "blöd", 39);
+  "prova 4", "blood", "ético", "bacíle", "straziato", "Ancora", "calo",
+  "Camera", "Canal", "Concatenacion", "bacillo", "Cliente", "prova 211",
+  "Calò", "etico", "Strain", "strasse", "Concatenación", "Prova 31",
+  "Cámara", "ancorato", "Calidad", "1", "913", "313", "", "Straße", "pesca",
+  "Viale Bolognesi, 21",  "pésca", "pescare", " ", "Àncora", "canál", 
+  "bacile", "blöd", 39, "àncora", "viale Bolognesi, 9");
 
 // Switch to a locale with accents
 $oldLocale=setlocale(LC_ALL, 0);
